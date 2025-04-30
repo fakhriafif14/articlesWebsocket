@@ -61,10 +61,20 @@ WebSocket adalah protokol komunikasi full-duplex berbasis TCP yang memungkinkan 
 
 ```bash
 mkdir websocket-chat
-cd websocket-chat
+```
+![image](ss1/mkdir.png)
+```cd websocket-chat
+```
+![image](ss1/chat.png)
+```
 npm init -y
+```
+![image](ss1/init.png)
+
+```
 npm install ws
 ```
+![image](ss1/install.png)
 
 #### 🚀 Langkah 2: Membuat Server WebSocket (server.js)
  ```
@@ -147,15 +157,28 @@ node server.js
 http://localhost:8080
 ```
 pastikan ```index html```di buka lewat server lokal atau ekstensi live server untuk menghindari pembatasan CORS
+![image](ss1/node.png)
 
-### 📈 Hasil dan Observasi
-⚡ Responsif: Pesan tampil instan di semua client.
 
-📉 Efisien: Tidak ada polling atau permintaan berulang.
+### 📈 Observasi dari Eksperimen
+Melalui eksperimen ini, saya mengamati beberapa hal penting tentang WebSocket:
+![image](ss1/ui.png)
+![image](ss1/user.png)
 
-🔄 Stabil: Koneksi tetap stabil dan otomatis reconnect.
+⚡ Kecepatan Komunikasi: Pesan yang dikirim muncul hampir secara instan di semua browser yang terhubung.
 
-🔧 Scalable: Bisa menangani banyak koneksi bersamaan dengan resource rendah.
+📶 Penggunaan Sumber Daya: Lebih efisien dibanding polling karena tidak ada permintaan berulang.
+
+🧰 Kemudahan Implementasi: Dengan library seperti Socket.IO (jika digunakan), implementasi menjadi mudah.
+
+📊 Skalabilitas: Server tetap responsif meskipun ada lebih dari 10 koneksi simultan.
+
+🔄 Keandalan Koneksi: Socket.IO (atau solusi serupa) menangani pemutusan dan rekoneksi otomatis.
+
+### ✅ Kesimpulan
+WebSocket merupakan teknologi revolusioner yang telah mengubah cara aplikasi web berkomunikasi dengan server. Dengan kemampuan komunikasi dua arah yang real-time dan efisien, WebSocket memungkinkan pengembangan aplikasi web yang lebih interaktif dan responsif.
+Dari eksperimen yang saya lakukan, jelas terlihat bahwa WebSocket memberikan keuntungan signifikan dalam hal kinerja, efisiensi bandwidth, dan pengalaman pengguna untuk aplikasi yang membutuhkan komunikasi real-time. Aplikasi chat sederhana yang saya bangun menunjukkan betapa mudahnya mengimplementasikan WebSocket menggunakan tools modern, dan betapa powerful hasilnya.
+Seiring berkembangnya ekosistem web, WebSocket akan terus menjadi komponen penting dalam arsitektur aplikasi web modern. Pemahaman mendalam tentang teknologi ini tidak hanya bermanfaat untuk mengembangkan aplikasi real-time yang efisien, tetapi juga memberikan wawasan tentang bagaimana internet berevolusi dari model request-response tradisional menuju komunikasi yang lebih dinamis dan interaktif.
 
 ### 📚 Referensi
 WebSocket API - MDN Web Docs
