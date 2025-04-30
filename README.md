@@ -63,7 +63,8 @@ WebSocket adalah protokol komunikasi full-duplex berbasis TCP yang memungkinkan 
 mkdir websocket-chat
 ```
 ![image](ss1/mkdir.png)
-```cd websocket-chat
+```
+cd websocket-chat
 ```
 ![image](ss1/chat.png)
 ```
