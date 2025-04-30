@@ -158,6 +158,7 @@ node server.js
 http://localhost:8080
 ```
 pastikan ```index html```di buka lewat server lokal atau ekstensi live server untuk menghindari pembatasan CORS
+
 ![image](ss1/node.png)
 
 
