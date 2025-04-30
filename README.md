@@ -69,7 +69,7 @@ mkdir websocket-chat
 ```
 npm init -y
 ```
-![image](ss1/init.png)
+![image](ss1/npm.png)
 
 ```
 npm install ws
